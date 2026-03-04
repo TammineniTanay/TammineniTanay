@@ -1,86 +1,202 @@
 # Hi, I'm Tanay Tammineni 👋
 
-**Machine Learning Engineer | AI & Computer Vision Developer | Data Science Enthusiast**
+Machine Learning Engineer | AI & Computer Vision Developer | Data Science Enthusiast
 
-I hold a Master’s degree in Computer and Information Sciences from Southeast Missouri State University (**3.9 GPA**). I specialize in building intelligent systems, leveraging deep learning, computer vision, and distributed cloud computing to solve complex, real-world problems.
+I am a Computer Science graduate from Southeast Missouri State University with strong experience in machine learning, artificial intelligence, and computer vision. I build intelligent systems that analyze real-world data and solve practical problems using AI and data-driven approaches.
 
-🔗 **Portfolio Website:** [tanaytammineni.vercel.app](https://tanaytammineni.vercel.app/)  
-🔗 **LinkedIn:** [linkedin.com/in/tanay-tammineni-ba6a9918b](https://www.linkedin.com/in/tanay-tammineni-ba6a9918b/)  
+🔗 Portfolio Website  
+https://tanaytammineni.vercel.app/
 
----
+🔗 LinkedIn  
+https://www.linkedin.com/in/tanay-tammineni-ba6a9918b/
 
-## 🚀 About Me
-
-As a published researcher and AI developer, my work focuses on designing scalable machine learning pipelines and implementing advanced computer vision architectures. From real-time traffic monitoring systems to secure, decentralized cryptographic protocols, I build robust software that bridges the gap between theoretical data science and practical application.
-
-**Key Focus Areas:**
-* Deep Learning & Computer Vision Architectures (CNNs, MobileNet)
-* Data Mining, Predictive Modeling, and Statistical Analysis
-* Cloud Deployments & Distributed Computing
-* Applied Cryptography & Security
-* User-Centric Design & Human-Computer Interaction
+🔗 GitHub  
+https://github.com/TammineniTanay
 
 ---
 
-## 🎓 Education
+## About Me
 
-**Master of Science in Computer and Information Sciences** Southeast Missouri State University  
-**Graduated: December 2025 | GPA: 3.9 / 4.0**
+I specialize in designing and implementing machine learning and computer vision systems that process real-time data and deliver meaningful insights.
 
-**Core Coursework:** Advanced Artificial Intelligence, Machine Learning, Distributed Cloud Computing, Cybersecurity, Human-Computer Interaction.
+My work includes:
 
----
+• Computer Vision systems for real-time detection and recognition  
+• Machine learning algorithm implementation and evaluation  
+• Data analysis and predictive modeling  
+• Intelligent IoT research and distributed systems  
+• Human-Computer Interaction design and usability analysis
 
-## 💻 Technical Skills
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-
-* **Languages:** Python, Java, JavaScript, C, SQL
-* **AI & Machine Learning:** TensorFlow, PyTorch, Scikit-learn, OpenAI API, NLP, Deep Learning (RNN/LSTM/GRU), Pandas, NumPy
-* **Web & Full-Stack:** React.js, Angular, Node.js, Django, HTML/CSS, WebSockets
-* **Cloud & DevOps:** AWS, Azure, Docker, Git/GitHub
-* **Computer Vision:** OpenCV, Object Detection, Image Processing
+I enjoy applying AI technologies to build scalable, practical software solutions.
 
 ---
 
-## 🌟 Featured Projects
+## Education
 
-### 🚗 [Real-Time Vehicle Detection System](https://github.com/TammineniTanay/vechiledetection)
-* **Highlight:** Published in the *CVR Journal of Science and Technology* and awarded **3rd Prize at Expo2K23**.
-* Designed an advanced computer vision pipeline utilizing SSD MobileNet v3 and OpenCV to achieve **88%+ accuracy** in real-time vehicle classification and directional counting for smart traffic monitoring.
+Master of Science in Computer and Information Sciences  
+Southeast Missouri State University  
 
-### 🔐 [Shamir's Secret Sharing Implementation](https://github.com/TammineniTanay/shamirs-secret-sharing)
-* Developed a secure cryptographic system utilizing threshold secret sharing to protect sensitive data across distributed cloud environments, preventing single points of failure in data storage.
+Graduated: December 2025  
+GPA: 3.9 / 4.0
 
-### 🧠 [Machine Learning Algorithms & Projects](https://github.com/TammineniTanay/machine-learning-algorithms-and-projects)
-* A curated collection of applied machine learning models, including ID3 Decision Trees, Support Vector Machines (SVM), Logistic Regression, Lasso/Ridge Regression, and Sentiment Analysis NLP pipelines. 
+Key Coursework:
 
-### 👤 [Face Recognition Attendance System](https://github.com/TammineniTanay/face-recognition-attendance-system)
-* Built an automated, real-time tracking system utilizing facial recognition algorithms to instantly detect, identify, and log individuals from live camera feeds.
-
-### 🎨 [HCI UX/UI Case Studies](https://github.com/TammineniTanay/human-computer-interaction-projects)
-* Conducted user-centered research, heuristic evaluations, and interactive prototyping to solve complex usability challenges and design intuitive application interfaces.
-
----
-
-## 📊 GitHub Stats
-
-![Tanay's GitHub stats](https://github-readme-stats.vercel.app/api?username=TammineniTanay&show_icons=true&theme=transparent)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TammineniTanay&layout=compact&theme=transparent)
+Machine Learning  
+Advanced Artificial Intelligence  
+Distributed Cloud Computing  
+Cybersecurity  
+Human Computer Interaction  
+Advanced Software Engineering  
+Advanced Programming Languages  
+Research Methods
 
 ---
 
-## 📈 Let's Connect!
-I am actively seeking full-time opportunities in Machine Learning, Data Analytics, and AI Development. Feel free to reach out to discuss technology, data, or exciting new projects.
+## Technical Skills
 
-📫 **Reach me at:** [LinkedIn](https://www.linkedin.com/in/tanay-tammineni-ba6a9918b/) | [Portfolio](https://tanaytammineni.vercel.app/)
+### Programming
+
+Python  
+Java  
+SQL  
+JavaScript  
+C
+
+### Machine Learning & AI
+
+Scikit-learn  
+TensorFlow  
+PyTorch  
+Deep Learning  
+RNN / LSTM / GRU  
+Natural Language Processing  
+Model Evaluation  
+Data Preprocessing
+
+### Computer Vision
+
+OpenCV  
+Object Detection  
+Image Processing  
+Face Recognition
+
+### Data Science
+
+Pandas  
+NumPy  
+Data Visualization  
+Statistical Analysis
+
+### Tools & Technologies
+
+Git  
+GitHub  
+Jupyter Notebook  
+Google Colab  
+VS Code  
+Docker  
+AWS
+
+---
+
+## Technology Stack
+
+![Python](https://img.shields.io/badge/Python-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-green)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-orange)
+![PyTorch](https://img.shields.io/badge/PyTorch-red)
+![OpenCV](https://img.shields.io/badge/OpenCV-blue)
+![Docker](https://img.shields.io/badge/Docker-blue)
+![AWS](https://img.shields.io/badge/AWS-orange)
+
+---
+
+## Featured Projects
+
+### Real-Time Vehicle Detection System
+
+Computer vision system that detects and tracks vehicles in real-time video streams using OpenCV and machine learning techniques.
+
+Published in the **CVR Journal of Science and Technology**  
+Awarded **3rd Prize at Project Expo2K23**
+
+Repository  
+https://github.com/TammineniTanay/vechiledetection
+
+---
+
+### Face Recognition Attendance Monitoring System
+
+Automated attendance system using facial recognition to detect and identify individuals from live camera input.
+
+Repository  
+https://github.com/TammineniTanay/face-recognition-attendance-system
+
+---
+
+### Machine Learning Coursework Implementations
+
+Collection of machine learning algorithm implementations including:
+
+• ID3 Decision Trees  
+• Logistic Regression  
+• Support Vector Machines  
+• Lasso / Ridge Regression  
+• Kernel PCA Visualization  
+• Sentiment Analysis
+
+Repository  
+https://github.com/TammineniTanay/machine-learning-coursework
+
+---
+
+### Human Computer Interaction Projects
+
+Projects focusing on usability design, user-centered interfaces, and interaction design principles.
+
+Repository  
+https://github.com/TammineniTanay/human-computer-interaction-projects
+
+---
+
+### Research Methods – Intelligent IoT
+
+Research exploring Intelligent Internet of Things (IIoT), secure communication systems, and distributed intelligence.
+
+Repository  
+https://github.com/TammineniTanay/research-methods-iiot-survey
+
+---
+
+## GitHub Statistics
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TammineniTanay&show_icons=true&theme=default)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TammineniTanay&layout=compact)
+
+---
+
+## Interests
+
+Artificial Intelligence  
+Machine Learning  
+Computer Vision  
+Data Science  
+Intelligent IoT Systems
+
+---
+
+## Connect With Me
+
+Portfolio Website  
+https://tanaytammineni.vercel.app/
+
+LinkedIn  
+https://www.linkedin.com/in/tanay-tammineni-ba6a9918b/
+
+GitHub  
+https://github.com/TammineniTanay
+
+---
+
+Thank you for visiting my GitHub profile.
