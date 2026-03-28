@@ -8,7 +8,7 @@ I am a Computer Science graduate from Southeast Missouri State University with s
 https://tanaytammineni.vercel.app/
 
 🔗 LinkedIn  
-https://www.linkedin.com/in/tanay-tammineni-ba6a9918b/
+https://www.linkedin.com/in/tanay-tammineni/
 
 🔗 GitHub  
 https://github.com/TammineniTanay
