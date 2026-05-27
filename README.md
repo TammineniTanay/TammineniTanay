@@ -74,8 +74,7 @@ me.say_hi()
 </td>
 <td valign="top" width="48%" align="center">
 
-<img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="380"/>
-
+<img src="./assets/terminal.svg" width="100%"/>
 <br/><br/>
 
 ![](https://img.shields.io/badge/MS_Computer_Science-3.9_GPA-6E40C9?style=flat-square&logo=academia&logoColor=white)
