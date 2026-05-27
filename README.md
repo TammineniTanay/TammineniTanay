@@ -1,202 +1,110 @@
-# Hi, I'm Tanay Tammineni 👋
+<h1 align="center">Hi, I'm Tanay Tammineni 👋</h1>
 
-Machine Learning Engineer | AI & Computer Vision Developer | Data Science Enthusiast
+<p align="center">
+  <b>AI Systems Engineer · LLM Infrastructure · RAG Pipelines · Distributed Training</b><br/>
+  MS Computer Science · 3.9 GPA · Southeast Missouri State University (Dec 2025)
+</p>
 
-I am a Computer Science graduate from Southeast Missouri State University with strong experience in machine learning, artificial intelligence, and computer vision. I build intelligent systems that analyze real-world data and solve practical problems using AI and data-driven approaches.
-
-🔗 Portfolio Website  
-https://tanaytammineni.vercel.app/
-
-🔗 LinkedIn  
-https://www.linkedin.com/in/tanay-tammineni/
-
-🔗 GitHub  
-https://github.com/TammineniTanay
-
----
-
-## About Me
-
-I specialize in designing and implementing machine learning and computer vision systems that process real-time data and deliver meaningful insights.
-
-My work includes:
-
-• Computer Vision systems for real-time detection and recognition  
-• Machine learning algorithm implementation and evaluation  
-• Data analysis and predictive modeling  
-• Intelligent IoT research and distributed systems  
-• Human-Computer Interaction design and usability analysis
-
-I enjoy applying AI technologies to build scalable, practical software solutions.
+<p align="center">
+  <a href="https://tanaytammineni.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
+  </a>
+  <a href="https://linkedin.com/in/tanay-tammineni-ba6a9918b">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://doi.org/10.5281/zenodo.19582347">
+    <img src="https://img.shields.io/badge/Publication-Zenodo-blue?style=for-the-badge&logo=zenodo&logoColor=white"/>
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=TammineniTanay&style=for-the-badge&color=6f42c1" alt="Profile Views"/>
+</p>
 
 ---
 
-## Education
+## 🔧 Currently Building
 
-Master of Science in Computer and Information Sciences  
-Southeast Missouri State University  
-
-Graduated: December 2025  
-GPA: 3.9 / 4.0
-
-Key Coursework:
-
-Machine Learning  
-Advanced Artificial Intelligence  
-Distributed Cloud Computing  
-Cybersecurity  
-Human Computer Interaction  
-Advanced Software Engineering  
-Advanced Programming Languages  
-Research Methods
+| Project | Stack | Status |
+|---|---|---|
+| Zero-cost Job Application Agent | Ollama · llama3.1:8b · SQLite · LaTeX | 🟡 In Progress |
+| LiveWire AI Co-Pilot (Chrome Extension) | WebSocket · Whisper · FastAPI · MV3 | 🟢 Active |
+| UniLLMOps Framework | LLM · RAG · CRAG · RAGAS | 📄 Published |
 
 ---
 
-## Technical Skills
+## 🚀 Flagship Projects
 
-### Programming
+### [Distributed LLM Fine-Tuning Pipeline](https://github.com/TammineniTanay/distributed-finetune-pipeline)
 
-Python  
-Java  
-SQL  
-JavaScript  
-C
+> QLoRA · DeepSpeed ZeRO-3 · Flash Attention 2 · DPO · vLLM + AWQ · Terraform AWS · 66 files · 11,000+ lines
 
-### Machine Learning & AI
-
-Scikit-learn  
-TensorFlow  
-PyTorch  
-Deep Learning  
-RNN / LSTM / GRU  
-Natural Language Processing  
-Model Evaluation  
-Data Preprocessing
-
-### Computer Vision
-
-OpenCV  
-Object Detection  
-Image Processing  
-Face Recognition
-
-### Data Science
-
-Pandas  
-NumPy  
-Data Visualization  
-Statistical Analysis
-
-### Tools & Technologies
-
-Git  
-GitHub  
-Jupyter Notebook  
-Google Colab  
-VS Code  
-Docker  
-AWS
+| Metric | Result |
+|---|---|
+| Per-GPU memory reduction | **41.2%** via ZeRO-3 offloading |
+| Inference throughput on Llama 3 8B | **3.8x** with tensor parallelism + AWQ |
+| Architecture | DPO alignment · TIES/DARE/SLERP merging · Prometheus+Grafana · CI/CD |
 
 ---
 
-## Technology Stack
+### [Production Hybrid RAG System](https://github.com/TammineniTanay/hybrid-rag-system)
 
-![Python](https://img.shields.io/badge/Python-blue)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-green)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-orange)
-![PyTorch](https://img.shields.io/badge/PyTorch-red)
-![OpenCV](https://img.shields.io/badge/OpenCV-blue)
-![Docker](https://img.shields.io/badge/Docker-blue)
-![AWS](https://img.shields.io/badge/AWS-orange)
+> Qdrant · Elasticsearch · Neo4j · LangGraph · RAGAS · React + FastAPI
 
----
-
-## Featured Projects
-
-### Real-Time Vehicle Detection System
-
-Computer vision system that detects and tracks vehicles in real-time video streams using OpenCV and machine learning techniques.
-
-Published in the **CVR Journal of Science and Technology**  
-Awarded **3rd Prize at Project Expo2K23**
-
-Repository  
-https://github.com/TammineniTanay/vechiledetection
+| Metric | Result |
+|---|---|
+| Retrieval faithfulness gain | **+23.7%** via hybrid RRF merging |
+| Mean retrieval latency | **163.5ms** |
+| Context precision | **1.0** · Answer relevancy **0.87** |
+| CRAG rewrite rate | **38%** · Pass-through **62%** |
 
 ---
 
-### Face Recognition Attendance Monitoring System
+## 📄 Publications
 
-Automated attendance system using facial recognition to detect and identify individuals from live camera input.
+**UniLLMOps: A Unified Framework for End-to-End LLM Production Systems**  
+Zenodo · April 2026 · DOI: [10.5281/zenodo.19582347](https://doi.org/10.5281/zenodo.19582347)  
+*Distributed fine-tuning · Hybrid RAG · CRAG · RAGAS evaluation · vLLM serving*
 
-Repository  
-https://github.com/TammineniTanay/face-recognition-attendance-system
-
----
-
-### Machine Learning Coursework Implementations
-
-Collection of machine learning algorithm implementations including:
-
-• ID3 Decision Trees  
-• Logistic Regression  
-• Support Vector Machines  
-• Lasso / Ridge Regression  
-• Kernel PCA Visualization  
-• Sentiment Analysis
-
-Repository  
-https://github.com/TammineniTanay/machine-learning-coursework
+**Real-Time Vehicle Detection and Classification Using Computer Vision**  
+CVR Journal of Science and Technology · June 2023 · [ResearchGate](https://www.researchgate.net/publication/372595973)  
+*88% accuracy · 5,000+ frames · OpenCV · 3rd Prize at Project Expo2K23*
 
 ---
 
-### Human Computer Interaction Projects
+## 🛠️ Tech Stack
 
-Projects focusing on usability design, user-centered interfaces, and interaction design principles.
-
-Repository  
-https://github.com/TammineniTanay/human-computer-interaction-projects
-
----
-
-### Research Methods – Intelligent IoT
-
-Research exploring Intelligent Internet of Things (IIoT), secure communication systems, and distributed intelligence.
-
-Repository  
-https://github.com/TammineniTanay/research-methods-iiot-survey
-
----
-
-## GitHub Statistics
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TammineniTanay&show_icons=true&theme=default)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TammineniTanay&layout=compact)
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white"/>
+</p>
 
 ---
 
-## Interests
+## 📊 GitHub Stats
 
-Artificial Intelligence  
-Machine Learning  
-Computer Vision  
-Data Science  
-Intelligent IoT Systems
-
----
-
-## Connect With Me
-
-Portfolio Website  
-https://tanaytammineni.vercel.app/
-
-LinkedIn  
-https://www.linkedin.com/in/tanay-tammineni-ba6a9918b/
-
-GitHub  
-https://github.com/TammineniTanay
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=TammineniTanay&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" height="160"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=TammineniTanay&theme=tokyonight&hide_border=true" height="160"/>
+</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TammineniTanay&layout=compact&theme=tokyonight&hide_border=true"/>
+</p>
 
 ---
 
-Thank you for visiting my GitHub profile.
+## 📬 Connect
+
+| | |
+|---|---|
+| 🌐 Portfolio | [tanaytammineni.vercel.app](https://tanaytammineni.vercel.app/) |
+| 💼 LinkedIn | [tanay-tammineni-ba6a9918b](https://linkedin.com/in/tanay-tammineni-ba6a9918b) |
+| 📁 GitHub | [TammineniTanay](https://github.com/TammineniTanay) |
+| 📄 Publication | [DOI: 10.5281/zenodo.19582347](https://doi.org/10.5281/zenodo.19582347) |
