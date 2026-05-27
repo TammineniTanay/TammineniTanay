@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tanay Tammineni — AI Systems Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --bg:#050508;
+  --surface:#0d0d14;
+  --border:#1a1a2e;
+  --purple:#7c3aed;
+  --purple-light:#a78bfa;
+  --cyan:#06b6d4;
+  --green:#10b981;
+  --amber:#f59e0b;
+  --text:#e2e8f0;
+  --muted:#64748b;
+  --font-display:'Syne',sans-serif;
+  --font-mono:'Space Mono',monospace;
+}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--font-mono);overflow-x:hidden;}
+
+/* noise overlay */
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.4;}
+
+/* grid bg */
+body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(124,58,237,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(124,58,237,.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);background:rgba(5,5,8,.85);backdrop-filter:blur(12px);}
+.nav-logo{font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--purple-light);letter-spacing:-.02em;}
+.nav-links{display:flex;gap:2rem;}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;transition:color .2s;}
+.nav-links a:hover{color:var(--purple-light);}
+
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:8rem 3rem 4rem;position:relative;z-index:1;}
+.hero-tag{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--purple);color:var(--purple-light);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;padding:.4rem 1rem;border-radius:100px;margin-bottom:2rem;width:fit-content;}
+.hero-tag span{width:6px;height:6px;background:var(--green);border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(1.5);}}
+h1{font-family:var(--font-display);font-size:clamp(3rem,8vw,7rem);font-weight:800;line-height:.95;letter-spacing:-.04em;margin-bottom:1.5rem;}
+h1 .line1{display:block;color:var(--text);}
+h1 .line2{display:block;color:transparent;-webkit-text-stroke:1px var(--purple-light);}
+.hero-sub{font-size:.85rem;color:var(--muted);max-width:500px;line-height:1.8;margin-bottom:3rem;}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;}
+.btn{padding:.75rem 1.75rem;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:all .2s;cursor:pointer;border:none;}
+.btn-primary{background:var(--purple);color:#fff;}
+.btn-primary:hover{background:#6d28d9;transform:translateY(-2px);}
+.btn-outline{background:transparent;color:var(--purple-light);border:1px solid var(--purple);}
+.btn-outline:hover{background:rgba(124,58,237,.1);transform:translateY(-2px);}
+
+/* metrics strip */
+.metrics{position:relative;z-index:1;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2rem 3rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;}
+.metric{text-align:center;}
+.metric-val{font-family:var(--font-display);font-size:2.2rem;font-weight:800;display:block;margin-bottom:.25rem;}
+.metric-val.purple{color:var(--purple-light);}
+.metric-val.cyan{color:var(--cyan);}
+.metric-val.green{color:var(--green);}
+.metric-val.amber{color:var(--amber);}
+.metric-label{font-size:.65rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;}
+
+/* sections */
+section{position:relative;z-index:1;padding:5rem 3rem;}
+.section-tag{font-size:.65rem;color:var(--purple-light);letter-spacing:.2em;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:.75rem;}
+.section-tag::before{content:'';width:30px;height:1px;background:var(--purple);}
+h2{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;margin-bottom:3rem;}
+
+/* projects grid */
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;}
+.project-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:2rem;transition:all .3s;position:relative;overflow:hidden;}
+.project-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(124,58,237,.05),transparent);opacity:0;transition:opacity .3s;}
+.project-card:hover{border-color:var(--purple);transform:translateY(-4px);}
+.project-card:hover::before{opacity:1;}
+.project-card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;}
+.project-title{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--text);}
+.project-link{color:var(--purple-light);text-decoration:none;font-size:.75rem;opacity:.7;transition:opacity .2s;}
+.project-link:hover{opacity:1;}
+.project-desc{font-size:.75rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem;}
+.project-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem;}
+.tag{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .6rem;border-radius:3px;border:1px solid;}
+.tag-purple{color:var(--purple-light);border-color:rgba(124,58,237,.3);background:rgba(124,58,237,.05);}
+.tag-cyan{color:var(--cyan);border-color:rgba(6,182,212,.3);background:rgba(6,182,212,.05);}
+.tag-green{color:var(--green);border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.05);}
+.tag-amber{color:var(--amber);border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.05);}
+.project-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;border-top:1px solid var(--border);padding-top:1.25rem;}
+.proj-metric{font-size:.65rem;}
+.proj-metric-val{display:block;font-weight:700;font-size:.9rem;margin-bottom:.15rem;}
+.proj-metric-label{color:var(--muted);}
+
+/* skills */
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.skill-group{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.5rem;}
+.skill-group-title{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--purple-light);margin-bottom:1.25rem;}
+.skill-list{display:flex;flex-direction:column;gap:.6rem;}
+.skill-item{display:flex;align-items:center;justify-content:space-between;font-size:.7rem;}
+.skill-name{color:var(--text);}
+.skill-bar-bg{width:80px;height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.skill-bar{height:100%;border-radius:2px;transition:width 1s ease;}
+
+/* publications */
+.pub-list{display:flex;flex-direction:column;gap:1.5rem;}
+.pub-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:start;transition:border-color .3s;}
+.pub-card:hover{border-color:var(--purple);}
+.pub-year{font-family:var(--font-display);font-size:2.5rem;font-weight:800;color:var(--border);line-height:1;white-space:nowrap;}
+.pub-title{font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:.5rem;}
+.pub-venue{font-size:.7rem;color:var(--purple-light);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.75rem;}
+.pub-desc{font-size:.75rem;color:var(--muted);line-height:1.7;margin-bottom:1rem;}
+.pub-link{font-size:.7rem;color:var(--purple-light);text-decoration:none;border-bottom:1px solid rgba(167,139,250,.3);padding-bottom:2px;transition:border-color .2s;}
+.pub-link:hover{border-color:var(--purple-light);}
+
+/* experience */
+.exp-list{display:flex;flex-direction:column;gap:0;position:relative;}
+.exp-list::before{content:'';position:absolute;left:7px;top:12px;bottom:12px;width:1px;background:linear-gradient(to bottom,var(--purple),var(--border));}
+.exp-item{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;padding-bottom:2.5rem;align-items:start;}
+.exp-dot{width:15px;height:15px;border-radius:50%;border:2px solid var(--purple);background:var(--bg);margin-top:3px;flex-shrink:0;position:relative;z-index:1;}
+.exp-dot.active{background:var(--purple);box-shadow:0 0 12px rgba(124,58,237,.5);}
+.exp-company{font-family:var(--font-display);font-size:1rem;font-weight:700;margin-bottom:.25rem;}
+.exp-role{font-size:.75rem;color:var(--purple-light);margin-bottom:.5rem;letter-spacing:.05em;}
+.exp-date{font-size:.65rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem;}
+.exp-desc{font-size:.72rem;color:var(--muted);line-height:1.8;}
+
+/* connect */
+.connect-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+.connect-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.5rem;text-decoration:none;display:flex;flex-direction:column;gap:.75rem;transition:all .3s;}
+.connect-card:hover{border-color:var(--purple);transform:translateY(-3px);}
+.connect-icon{font-size:1.5rem;}
+.connect-label{font-size:.65rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;}
+.connect-val{font-size:.8rem;color:var(--text);}
+
+/* footer */
+footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;}
+.footer-left{font-size:.7rem;color:var(--muted);}
+.footer-right{font-size:.7rem;color:var(--muted);}
+.footer-right span{color:var(--purple-light);}
+
+/* terminal */
+.terminal{background:#0a0a0f;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:3rem;}
+.terminal-bar{background:#111118;padding:.75rem 1rem;display:flex;align-items:center;gap:.5rem;border-bottom:1px solid var(--border);}
+.dot{width:10px;height:10px;border-radius:50%;}
+.dot-r{background:#ff5f57;}
+.dot-y{background:#febc2e;}
+.dot-g{background:#28c840;}
+.terminal-title{font-size:.7rem;color:var(--muted);margin-left:.5rem;}
+.terminal-body{padding:1.5rem;font-size:.75rem;line-height:2;}
+.t-prompt{color:#7aa2f7;}
+.t-cmd{color:#c0caf5;}
+.t-out{color:#9ece6a;}
+.t-key{color:#e0af68;}
+.t-val{color:#a78bfa;}
+.t-comment{color:#565f89;}
+.cursor{display:inline-block;width:8px;height:14px;background:var(--text);vertical-align:middle;animation:blink 1s step-end infinite;}
+@keyframes blink{50%{opacity:0;}}
+
+/* animations */
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+.fade-in.visible{opacity:1;transform:none;}
+
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem;}
+  .nav-links{display:none;}
+  .hero{padding:6rem 1.5rem 3rem;}
+  .metrics{grid-template-columns:repeat(2,1fr);padding:1.5rem;}
+  section{padding:3rem 1.5rem;}
+  .projects-grid{grid-template-columns:1fr;}
+  .skills-grid{grid-template-columns:1fr;}
+  .connect-grid{grid-template-columns:repeat(2,1fr);}
+  footer{flex-direction:column;gap:1rem;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">TT_</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#skills">Skills</a>
+    <a href="#connect">Connect</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-tag"><span></span>Open to AI/ML · Data Science · GenAI Roles</div>
+  <h1>
+    <span class="line1">Tanay</span>
+    <span class="line2">Tammineni</span>
+  </h1>
+  <p class="hero-sub">AI Systems Engineer building production LLM infrastructure, hybrid RAG pipelines, and distributed training systems that actually ship. MS CS · 3.9 GPA · Irving, TX.</p>
+  <div class="hero-cta">
+    <a href="https://tanaytammineni.vercel.app/" class="btn btn-primary" target="_blank">Portfolio →</a>
+    <a href="https://linkedin.com/in/tanay-tammineni-ba6a9918b" class="btn btn-outline" target="_blank">LinkedIn</a>
+    <a href="https://doi.org/10.5281/zenodo.19582347" class="btn btn-outline" target="_blank">Publications</a>
+  </div>
+
+  <div class="terminal fade-in">
+    <div class="terminal-bar">
+      <div class="dot dot-r"></div>
+      <div class="dot dot-y"></div>
+      <div class="dot dot-g"></div>
+      <span class="terminal-title">tanay@ai-engineer ~ zsh</span>
+    </div>
+    <div class="terminal-body">
+      <div><span class="t-prompt">tanay@ai</span><span style="color:#565f89">:</span><span class="t-val">~</span><span style="color:#565f89"> $ </span><span class="t-cmd">python tanay.py</span></div>
+      <div><span class="t-out">✓ </span><span class="t-key">role</span><span style="color:#565f89"> = </span><span class="t-val">"AI Systems Engineer"</span></div>
+      <div><span class="t-out">✓ </span><span class="t-key">memory_reduction</span><span style="color:#565f89"> = </span><span class="t-val">"41.2%"</span><span class="t-comment">  # DeepSpeed ZeRO-3</span></div>
+      <div><span class="t-out">✓ </span><span class="t-key">throughput_gain</span><span style="color:#565f89"> = </span><span class="t-val">"3.8x"</span><span class="t-comment">  # Llama 3 8B + AWQ</span></div>
+      <div><span class="t-out">✓ </span><span class="t-key">faithfulness_gain</span><span style="color:#565f89"> = </span><span class="t-val">"+23.7%"</span><span class="t-comment">  # Hybrid RRF</span></div>
+      <div><span class="t-out">✓ </span><span class="t-key">publications</span><span style="color:#565f89"> = </span><span class="t-val">2</span></div>
+      <div><span class="t-out">✓ </span><span class="t-key">status</span><span style="color:#565f89"> = </span><span class="t-val">"🟢 Open to Opportunities"</span></div>
+      <div style="margin-top:.5rem"><span class="t-prompt">tanay@ai</span><span style="color:#565f89">:</span><span class="t-val">~</span><span style="color:#565f89"> $ </span><span class="cursor"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- METRICS -->
+<div class="metrics fade-in">
+  <div class="metric">
+    <span class="metric-val purple">41.2%</span>
+    <span class="metric-label">GPU Memory Reduction</span>
+  </div>
+  <div class="metric">
+    <span class="metric-val cyan">3.8x</span>
+    <span class="metric-label">Inference Throughput</span>
+  </div>
+  <div class="metric">
+    <span class="metric-val green">+23.7%</span>
+    <span class="metric-label">Retrieval Faithfulness</span>
+  </div>
+  <div class="metric">
+    <span class="metric-val amber">2</span>
+    <span class="metric-label">Peer-Reviewed Publications</span>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-tag">Featured Work</div>
+  <h2>Flagship Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card fade-in">
+      <div class="project-card-header">
+        <div class="project-title">⚡ Distributed LLM Fine-Tuning Pipeline</div>
+        <a href="https://github.com/TammineniTanay/distributed-finetune-pipeline" class="project-link" target="_blank">↗ GitHub</a>
+      </div>
+      <p class="project-desc">Production-grade distributed training system for Llama 3 8B. QLoRA + DeepSpeed ZeRO-3 + Flash Attention 2. DPO alignment, TIES/DARE/SLERP merging from scratch. Terraform AWS, Prometheus+Grafana, GitHub Actions CI. 66 files · 11,000+ lines.</p>
+      <div class="project-tags">
+        <span class="tag tag-purple">QLoRA</span>
+        <span class="tag tag-purple">DeepSpeed ZeRO-3</span>
+        <span class="tag tag-cyan">vLLM + AWQ</span>
+        <span class="tag tag-cyan">Flash Attention 2</span>
+        <span class="tag tag-green">Terraform AWS</span>
+        <span class="tag tag-amber">DPO · TIES · SLERP</span>
+      </div>
+      <div class="project-metrics">
+        <div class="proj-metric">
+          <span class="proj-metric-val" style="color:var(--purple-light)">−41.2%</span>
+          <span class="proj-metric-label">Per-GPU Memory</span>
+        </div>
+        <div class="proj-metric">
+          <span class="proj-metric-val" style="color:var(--cyan)">3.8x</span>
+          <span class="proj-metric-label">Throughput Gain</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-card-header">
+        <div class="project-title">🔍 Production Hybrid RAG System</div>
+        <a href="https://github.com/TammineniTanay/hybrid-rag-system" class="project-link" target="_blank">↗ GitHub</a>
+      </div>
+      <p class="project-desc">Hybrid retrieval via Qdrant + Elasticsearch + Neo4j with RRF merging. CRAG via LangGraph, RLHF-style feedback loop, full RAGAS evaluation dashboard in React + FastAPI. Real production metrics verified.</p>
+      <div class="project-tags">
+        <span class="tag tag-cyan">Qdrant</span>
+        <span class="tag tag-cyan">Elasticsearch</span>
+        <span class="tag tag-purple">Neo4j</span>
+        <span class="tag tag-purple">LangGraph · CRAG</span>
+        <span class="tag tag-green">RAGAS</span>
+        <span class="tag tag-green">FastAPI · React</span>
+      </div>
+      <div class="project-metrics">
+        <div class="proj-metric">
+          <span class="proj-metric-val" style="color:var(--green)">+23.7%</span>
+          <span class="proj-metric-label">Faithfulness Gain</span>
+        </div>
+        <div class="proj-metric">
+          <span class="proj-metric-val" style="color:var(--amber)">163.5ms</span>
+          <span class="proj-metric-label">Mean Latency</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-card-header">
+        <div class="project-title">🤖 JobAgent — AI Application Pipeline</div>
+        <a href="https://github.com/TammineniTanay/JobAgent" class="project-link" target="_blank">↗ GitHub</a>
+      </div>
+      <p class="project-desc">Zero-cost automated job application agent. Ingests daily Excel job feeds, filters roles, generates tailored resumes and cover letters using local Ollama (llama3.1:8b) + LaTeX. No external API calls. No cost.</p>
+      <div class="project-tags">
+        <span class="tag tag-purple">Ollama · llama3.1:8b</span>
+        <span class="tag tag-cyan">SQLite · Pandas</span>
+        <span class="tag tag-green">LaTeX · pdflatex</span>
+        <span class="tag tag-amber">$0.00 API Cost</span>
+      </div>
+      <div class="project-metrics">
+        <div class="proj-metric">
+          <span class="proj-metric-val" style="color:var(--green)">$0.00</span>
+          <span class="proj-metric-label">API Cost</span>
+        </div>
+        <div class="proj-metric">
+          <span class="proj-metric-val" style="color:var(--purple-light)">100%</span>
+          <span class="proj-metric-label">Local · Private</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-card-header">
+        <div class="project-title">🚗 Real-Time Vehicle Detection</div>
+        <a href="https://github.com/TammineniTanay/realtime-Vechile-Detection-using-AI" class="project-link" target="_blank">↗ GitHub</a>
+      </div>
+      <p class="project-desc">Real-time vehicle detection and classification using computer vision. Published in CVR Journal of Science and Technology, June 2023. Awarded 3rd Prize at Project Expo2K23. 5,000+ frames processed.</p>
+      <div class="project-tags">
+        <span class="tag tag-cyan">OpenCV</span>
+        <span class="tag tag-purple">Computer Vision</span>
+        <span class="tag tag-green">CVR Journal · Published</span>
+        <span class="tag tag-amber">🏆 3rd Prize Expo2K23</span>
+      </div>
+      <div class="project-metrics">
+        <div class="proj-metric">
+          <span class="proj-metric-val" style="color:var(--green)">88%</span>
+          <span class="proj-metric-label">Accuracy</span>
+        </div>
+        <div class="proj-metric">
+          <span class="proj-metric-val" style="color:var(--cyan)">5,000+</span>
+          <span class="proj-metric-label">Frames Processed</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-tag">Research</div>
+  <h2>Publications</h2>
+  <div class="pub-list">
+    <div class="pub-card fade-in">
+      <div class="pub-year">2026</div>
+      <div>
+        <div class="pub-title">UniLLMOps: A Unified Framework for End-to-End LLM Production Systems</div>
+        <div class="pub-venue">Zenodo · April 2026 · Targeting arXiv cs.AI</div>
+        <p class="pub-desc">Covers distributed fine-tuning, hybrid RAG, CRAG rewriting, RAGAS evaluation, and vLLM serving. Verified metrics: 23.7% faithfulness gain, 41.2% GPU reduction, 3.8x throughput, 163.5ms latency.</p>
+        <a href="https://doi.org/10.5281/zenodo.19582347" class="pub-link" target="_blank">DOI: 10.5281/zenodo.19582347 →</a>
+      </div>
+    </div>
+    <div class="pub-card fade-in">
+      <div class="pub-year">2023</div>
+      <div>
+        <div class="pub-title">Real-Time Vehicle Detection and Classification Using Computer Vision</div>
+        <div class="pub-venue">CVR Journal of Science and Technology · June 2023</div>
+        <p class="pub-desc">Real-time multi-class vehicle detection system for intelligent traffic monitoring. 88% accuracy across 5,000+ frames. Awarded 3rd Prize at Project Expo2K23.</p>
+        <a href="https://www.researchgate.net/publication/372595973" class="pub-link" target="_blank">View on ResearchGate →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-tag">Technical Expertise</div>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-group fade-in">
+      <div class="skill-group-title">LLM & AI</div>
+      <div class="skill-list">
+        <div class="skill-item"><span class="skill-name">PyTorch</span><div class="skill-bar-bg"><div class="skill-bar" style="width:95%;background:var(--purple-light)"></div></div></div>
+        <div class="skill-item"><span class="skill-name">LangChain / LlamaIndex</span><div class="skill-bar-bg"><div class="skill-bar" style="width:92%;background:var(--purple-light)"></div></div></div>
+        <div class="skill-item"><span class="skill-name">DeepSpeed / vLLM</span><div class="skill-bar-bg"><div class="skill-bar" style="width:88%;background:var(--purple-light)"></div></div></div>
+        <div class="skill-item"><span class="skill-name">TensorFlow</span><div class="skill-bar-bg"><div class="skill-bar" style="width:85%;background:var(--purple-light)"></div></div></div>
+      </div>
+    </div>
+    <div class="skill-group fade-in">
+      <div class="skill-group-title">Data Engineering</div>
+      <div class="skill-list">
+        <div class="skill-item"><span class="skill-name">Python / SQL</span><div class="skill-bar-bg"><div class="skill-bar" style="width:97%;background:var(--cyan)"></div></div></div>
+        <div class="skill-item"><span class="skill-name">PySpark / Databricks</span><div class="skill-bar-bg"><div class="skill-bar" style="width:85%;background:var(--cyan)"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Pandas / NumPy</span><div class="skill-bar-bg"><div class="skill-bar" style="width:93%;background:var(--cyan)"></div></div></div>
+        <div class="skill-item"><span class="skill-name">MongoDB / Redis</span><div class="skill-bar-bg"><div class="skill-bar" style="width:82%;background:var(--cyan)"></div></div></div>
+      </div>
+    </div>
+    <div class="skill-group fade-in">
+      <div class="skill-group-title">Cloud & DevOps</div>
+      <div class="skill-list">
+        <div class="skill-item"><span class="skill-name">AWS (S3/Bedrock/Lambda)</span><div class="skill-bar-bg"><div class="skill-bar" style="width:85%;background:var(--green)"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Docker / CI-CD</span><div class="skill-bar-bg"><div class="skill-bar" style="width:90%;background:var(--green)"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Terraform</span><div class="skill-bar-bg"><div class="skill-bar" style="width:80%;background:var(--green)"></div></div></div>
+        <div class="skill-item"><span class="skill-name">FastAPI / REST APIs</span><div class="skill-bar-bg"><div class="skill-bar" style="width:92%;background:var(--green)"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="about" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-tag">Career</div>
+  <h2>Experience</h2>
+  <div class="exp-list">
+    <div class="exp-item fade-in">
+      <div class="exp-dot active"></div>
+      <div>
+        <div class="exp-company">VoiceBotics AI <span style="color:var(--muted);font-size:.7rem;font-family:var(--font-mono)">(formerly Automate365)</span></div>
+        <div class="exp-role">AI Systems Developer Intern</div>
+        <div class="exp-date">Current · Remote · Irving, TX</div>
+        <p class="exp-desc">Built LiveWire AI Co-Pilot Chrome MV3 extension across Sprints 8–13. Architecture: tab+mic stereo WebM capture → WebSocket → FastAPI → FFmpeg → Whisper STT → evidence packs. Delivered platform fingerprinting, 16 normalized error codes, STT latency watchdog, mute-aware silence detection, adaptive buffer, and background asyncio processing.</p>
+      </div>
+    </div>
+    <div class="exp-item fade-in">
+      <div class="exp-dot"></div>
+      <div>
+        <div class="exp-company">Globalshala</div>
+        <div class="exp-role">Data Engineer Intern</div>
+        <div class="exp-date">2022</div>
+        <p class="exp-desc">Built ETL pipelines on Azure Databricks, Power BI dashboards, and SQL query optimization. Maintained 99.9% system uptime across data infrastructure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section id="connect">
+  <div class="section-tag">Get In Touch</div>
+  <h2>Connect</h2>
+  <div class="connect-grid">
+    <a href="https://tanaytammineni.vercel.app/" class="connect-card" target="_blank">
+      <div class="connect-icon">🌐</div>
+      <div class="connect-label">Portfolio</div>
+      <div class="connect-val">tanaytammineni.vercel.app</div>
+    </a>
+    <a href="https://linkedin.com/in/tanay-tammineni-ba6a9918b" class="connect-card" target="_blank">
+      <div class="connect-icon">💼</div>
+      <div class="connect-label">LinkedIn</div>
+      <div class="connect-val">tanay-tammineni-ba6a9918b</div>
+    </a>
+    <a href="https://doi.org/10.5281/zenodo.19582347" class="connect-card" target="_blank">
+      <div class="connect-icon">📄</div>
+      <div class="connect-label">UniLLMOps Paper</div>
+      <div class="connect-val">Zenodo · DOI 10.5281</div>
+    </a>
+    <a href="https://github.com/TammineniTanay" class="connect-card" target="_blank">
+      <div class="connect-icon">💻</div>
+      <div class="connect-label">GitHub</div>
+      <div class="connect-val">TammineniTanay</div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">© 2026 Tanay Tammineni · Built with intention</div>
+  <div class="footer-right">MS CS · 3.9 GPA · <span>Open to opportunities</span></div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold: 0.1});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
+```
