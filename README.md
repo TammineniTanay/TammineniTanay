@@ -2,7 +2,8 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&pause=800&color=6E40C9&center=true&vCenter=true&width=800&lines=AI+%2F+ML+Engineer;LLM+Infrastructure+%26+Fine-Tuning;Production+RAG+Systems;Data+Scientist+%26+GenAI+Builder;2x+Peer-Reviewed+Publications" alt="Typing SVG" /></a>  </a>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&pause=800&color=6E40C9&center=true&vCenter=true&width=800&lines=AI+%2F+ML+Engineer;LLM+Infrastructure+%26+Fine-Tuning;Production+RAG+Systems;Data+Scientist+%26+GenAI+Builder;2x+Peer-Reviewed+Publications;Open+To+Opportunities" alt="Typing SVG"/>
+  </a>
 </p>
 
 <div align="center">
@@ -19,7 +20,7 @@
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3&section=header"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
 
 ## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"/> About Me
 
@@ -43,14 +44,14 @@ class AIEngineer:
     @property
     def expertise(self):
         return {
-            "LLM"       : ["QLoRA", "DeepSpeed ZeRO-3",
-                           "vLLM", "Flash Attention 2"],
-            "RAG"       : ["Qdrant", "Elasticsearch",
-                           "Neo4j", "LangGraph", "CRAG"],
-            "Data"      : ["PySpark", "Databricks",
-                           "SQL", "Pandas", "RAGAS"],
-            "Cloud"     : ["AWS", "Docker",
-                           "Terraform", "CI/CD"],
+            "LLM"  : ["QLoRA", "DeepSpeed ZeRO-3",
+                      "vLLM", "Flash Attention 2"],
+            "RAG"  : ["Qdrant", "Elasticsearch",
+                      "Neo4j", "LangGraph", "CRAG"],
+            "Data" : ["PySpark", "Databricks",
+                      "SQL", "Pandas", "RAGAS"],
+            "Cloud": ["AWS", "Docker",
+                      "Terraform", "CI/CD"],
         }
 
     @property
@@ -75,6 +76,7 @@ me.say_hi()
 <td valign="top" width="48%" align="center">
 
 <img src="./assets/terminal.svg" width="100%"/>
+
 <br/><br/>
 
 ![](https://img.shields.io/badge/MS_Computer_Science-3.9_GPA-6E40C9?style=flat-square&logo=academia&logoColor=white)
@@ -88,38 +90,21 @@ me.say_hi()
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
 
 ## ⚡ Key Metrics
 
 <div align="center">
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/📄-2_Publications-6E40C9?style=for-the-badge"/>
-<br/><sub><b>Peer-Reviewed Research</b></sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/🎓-3.9_GPA-blue?style=for-the-badge"/>
-<br/><sub><b>MS Computer Science</b></sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/⚡-41.2%25_Memory_Reduction-success?style=for-the-badge"/>
-<br/><sub><b>DeepSpeed ZeRO-3</b></sub>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/🚀-3.8x_Throughput-orange?style=for-the-badge"/>
-<br/><sub><b>Llama 3 8B Inference</b></sub>
-</td>
-</tr>
-</table>
+
+<img src="./assets/metrics.svg" width="100%"/>
+
 </div>
 
 <br/>
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
 
 ## 🔧 Currently Building
 
@@ -173,7 +158,7 @@ Unified LLM production framework — fine-tuning to serving. Zenodo · Targeting
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
 
 ## 🛠️ Tech Stack
 
@@ -195,11 +180,7 @@ Unified LLM production framework — fine-tuning to serving. Zenodo · Targeting
 
 <img src="https://skillicons.dev/icons?i=vscode,fastapi,react,grafana&theme=dark"/>
 
-</div>
-
 <br/>
-
-<div align="center">
 
 ![Python](https://img.shields.io/badge/Python-Expert-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Advanced-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -216,7 +197,7 @@ Unified LLM production framework — fine-tuning to serving. Zenodo · Targeting
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
 
 ## 🚀 Flagship Projects
 
@@ -225,7 +206,6 @@ Unified LLM production framework — fine-tuning to serving. Zenodo · Targeting
 <td valign="top" width="50%">
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" width="40"/>
 
 ### [⚡ Distributed LLM Fine-Tuning Pipeline](https://github.com/TammineniTanay/distributed-finetune-pipeline)
 </div>
@@ -247,7 +227,6 @@ Unified LLM production framework — fine-tuning to serving. Zenodo · Targeting
 <td valign="top" width="50%">
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212749171-b84692a8-2b04-4e3b-93ca-ac14705da224.gif" width="40"/>
 
 ### [🔍 Production Hybrid RAG System](https://github.com/TammineniTanay/hybrid-rag-system)
 </div>
@@ -305,7 +284,7 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
 
 ## 💼 Experience
 
@@ -341,7 +320,7 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
 
 ## 📄 Publications
 
@@ -390,13 +369,13 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
 
 ## 🏅 Certifications
 
 <div align="center">
 
-![Columbia](https://img.shields.io/badge/Prompt_Engineering_%26_OpenAI-Columbia_University-003865?style=flat-square&logo=columbia&logoColor=white)
+![Columbia](https://img.shields.io/badge/Prompt_Engineering_%26_OpenAI-Columbia_University-003865?style=flat-square)
 ![UCSC](https://img.shields.io/badge/C_for_Everyone-UC_Santa_Cruz-003C6E?style=flat-square)
 ![HackerRank](https://img.shields.io/badge/Software_Engineer_Intern-HackerRank-2EC866?style=flat-square&logo=hackerrank&logoColor=white)
 ![Cisco](https://img.shields.io/badge/Python_Essentials_1-Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
@@ -408,7 +387,7 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=3"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
 
 ## 📊 GitHub Stats
 
@@ -456,6 +435,8 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 
 ---
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6E40C9,100:a855f7&height=3"/>
+
 ## 📬 Connect
 
 <div align="center">
@@ -475,4 +456,4 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
   <img alt="github-snake" src="https://raw.githubusercontent.com/TammineniTanay/TammineniTanay/output/github-snake.svg"/>
 </picture>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&color=gradient&customColorList=6,11,20&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=130&color=0:6E40C9,100:a855f7&section=footer"/>
