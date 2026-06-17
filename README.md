@@ -395,16 +395,16 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 <!--END_SECTION:waka-->
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TammineniTanay&theme=tokyonight&v=20260617" width="100%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TammineniTanay&theme=tokyonight&v=20260617cc" width="100%"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TammineniTanay&theme=tokyonight&v=20260617" height="160"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TammineniTanay&theme=tokyonight&v=20260617" height="160"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TammineniTanay&theme=tokyonight&v=20260617" height="160"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=TammineniTanay&theme=tokyonight&v=20260617" height="160"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TammineniTanay&theme=tokyonight&v=20260617cc" height="160"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TammineniTanay&theme=tokyonight&v=20260617cc" height="160"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TammineniTanay&theme=tokyonight&v=20260617cc" height="160"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=TammineniTanay&theme=tokyonight&v=20260617cc" height="160"/>
 
 </div>
 
@@ -412,8 +412,8 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=TammineniTanay&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github&cache_seconds=1&v=20260617" height="170"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TammineniTanay&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1&v=20260617" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api?username=TammineniTanay&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github&cache_seconds=1&v=20260617cc" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TammineniTanay&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1&v=20260617c" height="170"/>
 
 </div>
 
