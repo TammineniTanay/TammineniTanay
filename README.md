@@ -29,7 +29,7 @@
 <tr>
 <td valign="top" width="52%">
 
-```python
+\`\`\`python
 #!/usr/bin/env python3
 # tanay_tammineni.py
 
@@ -71,7 +71,7 @@ class AIEngineer:
 
 me = AIEngineer()
 me.say_hi()
-```
+\`\`\`
 
 </td>
 <td valign="top" width="48%" align="center">
@@ -122,7 +122,7 @@ me.say_hi()
 
 Zero-cost job application pipeline. Local Ollama · llama3.1:8b · SQLite · LaTeX. **No API calls. No cost.**
 
-`Ollama` `SQLite` `Pandas` `LaTeX`
+\`Ollama\` \`SQLite\` \`Pandas\` \`LaTeX\`
 
 </td>
 <td align="center" width="33%">
@@ -135,7 +135,7 @@ Zero-cost job application pipeline. Local Ollama · llama3.1:8b · SQLite · LaT
 
 Chrome MV3 extension · Tab + mic capture · Whisper STT · Evidence packs.
 
-`WebSocket` `FastAPI` `Whisper` `Chrome MV3`
+\`WebSocket\` \`FastAPI\` \`Whisper\` \`Chrome MV3\`
 
 </td>
 <td align="center" width="33%">
@@ -148,7 +148,7 @@ Chrome MV3 extension · Tab + mic capture · Whisper STT · Evidence packs.
 
 Unified LLM production framework — fine-tuning to serving. Zenodo · Targeting arXiv cs.AI.
 
-`LLM` `RAG` `CRAG` `RAGAS` `vLLM`
+\`LLM\` \`RAG\` \`CRAG\` \`RAGAS\` \`vLLM\`
 
 </td>
 </tr>
@@ -298,7 +298,7 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 
 **AI Systems Developer Intern** · VoiceBotics AI *(formerly Automate365)*
 
-`Remote · Irving, TX` · Chrome MV3 · WebSocket · FastAPI · Whisper STT · Sprints 8–13 delivered
+\`Remote · Irving, TX\` · Chrome MV3 · WebSocket · FastAPI · Whisper STT · Sprints 8–13 delivered
 
 </td>
 </tr>
@@ -311,7 +311,7 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 
 **Data Engineer Intern** · Globalshala
 
-`Azure Databricks` · ETL pipelines · Power BI dashboards · SQL optimization · **99.9% uptime**
+\`Azure Databricks\` · ETL pipelines · Power BI dashboards · SQL optimization · **99.9% uptime**
 
 </td>
 </tr>
@@ -395,16 +395,16 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 <!--END_SECTION:waka-->
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TammineniTanay&theme=tokyonight" width="100%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TammineniTanay&theme=tokyonight&v=20260617" width="100%"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TammineniTanay&theme=tokyonight" height="160"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TammineniTanay&theme=tokyonight" height="160"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TammineniTanay&theme=tokyonight" height="160"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=TammineniTanay&theme=tokyonight" height="160"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TammineniTanay&theme=tokyonight&v=20260617" height="160"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TammineniTanay&theme=tokyonight&v=20260617" height="160"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TammineniTanay&theme=tokyonight&v=20260617" height="160"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=TammineniTanay&theme=tokyonight&v=20260617" height="160"/>
 
 </div>
 
@@ -412,8 +412,8 @@ Published in **CVR Journal of Science & Technology · June 2023.** Real-time det
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=TammineniTanay&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github" height="170"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TammineniTanay&layout=compact&theme=tokyonight&hide_border=true" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api?username=TammineniTanay&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github&cache_seconds=1&v=20260617" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TammineniTanay&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1&v=20260617" height="170"/>
 
 </div>
 
