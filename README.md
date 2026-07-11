@@ -13,7 +13,7 @@
 [![Zenodo](https://img.shields.io/badge/Zenodo-UniLLMOps_Paper-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.19582347)
 [![ResearchGate](https://img.shields.io/badge/ResearchGate-CV_Paper-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://www.researchgate.net/publication/372595973)
 ![Profile Views](https://komarev.com/ghpvc/?username=TammineniTanay&style=for-the-badge&color=6f42c1&label=PROFILE+VIEWS)
-![Last Updated](https://img.shields.io/badge/Last_Updated-2026--07--10E40C9?style=for-the-badge)
+![Last Updated](https://img.shields.io/badge/Last_Updated-2026--07--11E40C9?style=for-the-badge)
 
 </div>
 
